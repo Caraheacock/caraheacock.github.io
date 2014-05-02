@@ -2,3 +2,4 @@ name: Cara Heacock
 markdown: redcarpet
 pygments: true
 permalink: pretty
+baseurl: /portfolio
