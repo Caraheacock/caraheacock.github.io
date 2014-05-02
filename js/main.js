@@ -4,13 +4,14 @@ $("document").ready(function(){
   var minutes = now.getMinutes();
   var hours = now.getHours();
     
-  // Positions main page nav
-  function positionMainPageNav() {
+  // Positions main nav and resizes clock according to page
+  function positionAndResize() {
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
     var mainPageNavHeight = $("#main_page_nav").height() + 40;
     var minimum = 750;
     
+    // Hanging onto this in case I need to do anything special for mobile
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     }
     
@@ -85,8 +86,8 @@ $("document").ready(function(){
   }
   
   // Main Flow
-  $(positionMainPageNav()); // Sets position when page is first loaded
-  $(window).resize(positionMainPageNav); // Resets position whenever window size is changed
+  $(positionAndResize()); // Sets position when page is first loaded
+  $(window).resize(positionAndResize); // Resets position whenever window size is changed
   tick();
   loadColors();
   setInterval(tick, 1000);
