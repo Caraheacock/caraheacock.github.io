@@ -9,7 +9,7 @@ $("document").ready(function(){
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
     var mainPageNavHeight = $("#main_page_nav").height() + 40;
-    var minimum = 750;
+    var minimum = 600;
     
     // Hanging onto this in case I need to do anything special for mobile
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
