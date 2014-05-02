@@ -153,7 +153,7 @@ a:hover {
 }
 
 #child_page_container #clock_container {
-  opacity: 0.2;
+  opacity: 0.15;
 }
 
 /* Portfolio */
@@ -197,7 +197,7 @@ a:hover {
   }
   
   #clock_container {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   
   h1 {
