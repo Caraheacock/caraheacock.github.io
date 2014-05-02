@@ -26,17 +26,17 @@ body {
 
 @font-face {
 	font-family: Comfortaa Bold;
-	src: url({{ site.baseurl }}/fonts/Comfortaa-Bold.ttf);
+	src: url(/fonts/Comfortaa-Bold.ttf);
 }
 
 @font-face {
 	font-family: Comfortaa;
-	src: url({{ site.baseurl }}/fonts/Comfortaa-Regular.ttf);
+	src: url(/fonts/Comfortaa-Regular.ttf);
 }
 
 @font-face {
 	font-family: Comfortaa Light;
-	src: url({{ site.baseurl }}/fonts/Comfortaa-Light.ttf);
+	src: url(/fonts/Comfortaa-Light.ttf);
 }
 
 h1, h1 a, h2, h3, h4, h5, h6 {
