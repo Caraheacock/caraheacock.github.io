@@ -66,9 +66,9 @@ $("document").ready(function(){
     // }
     
     if (hours > 7 && hours < 18 ) {
-      $("#content_container, #content_container a").addClass("text-black");
+      $("#content_container, #content_container a").addClass("text-black").removeClass("text-white");
     } else {
-      $("#content_container, #content_container a").addClass("text-white");
+      $("#content_container, #content_container a").addClass("text-white").removeClass("text-black");
     }
   }
   
