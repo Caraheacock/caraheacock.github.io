@@ -59,10 +59,16 @@ $("document").ready(function(){
     $("#clock_face").attr("class", "hour" + hours);
     
     // Change the text color
+    // if (hours > 7 && hours < 18 ) {
+    //   $("h1, h2, h3, h4, h5, h6, p, th, td, li, a").attr("class", "text-black");
+    // } else {
+    //   $("h1, h2, h3, h4, h5, h6, p, th, td, li, a").attr("class", "text-white");
+    // }
+    
     if (hours > 7 && hours < 18 ) {
-      $("h1, h2, h3, h4, h5, h6, p, th, td, li, a").attr("class", "text-black");
+      $("#content_container, #content_container a").addClass("text-black");
     } else {
-      $("h1, h2, h3, h4, h5, h6, p, th, td, li, a").attr("class", "text-white");
+      $("#content_container, #content_container a").addClass("text-white");
     }
   }
   
