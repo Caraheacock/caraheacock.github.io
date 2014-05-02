@@ -78,11 +78,8 @@ $("document").ready(function(){
     $("#minute_hand").attr("transform", "rotate(" + minutes*6 + " 500 500)");
     $("#hour_hand").attr("transform", "rotate(" + (hours*30 + minutes/2) + " 500 500)");
     
-    // Check if it's a new hour
-    // If so, change color scheme
-    if (minutes === 0 && seconds === 0) {
-      loadColors();
-    }
+    // Change color scheme
+    loadColors();
   }
   
   // Main Flow
