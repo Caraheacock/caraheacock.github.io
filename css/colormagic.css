@@ -1,0 +1,179 @@
+/* Whites, Grays, and Blacks */
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-white-transparent {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.hand-white {
+  fill: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-lt-gray {
+  background-color: #ccc;
+}
+
+.bg-lt-gray-transparent {
+  background-color: rgba(205,205,205,0.7);
+}
+
+.hand-lt-gray {
+  fill: #ccc;
+}
+
+.bg-md-lt-gray {
+  background-color: #999;
+}
+
+.bg-md-lt-gray-transparent {
+  background-color: rgba(154,154,154,0.7);
+}
+
+.hand-md-lt-gray {
+  fill: #999;
+}
+
+.bg-md-dk-gray {
+  background-color: #666;
+}
+
+.bg-md-dk-gray-transparent {
+  background-color: rgba(102,102,102,0.7);
+}
+
+.hand-md-dk-gray {
+  fill: #666;
+}
+
+.bg-dk-gray {
+  background-color: #333;
+}
+
+.bg-dk-gray-transparent {
+  background-color: rgba(52,52,52,0.7);
+}
+
+.hand-dk-gray {
+  fill: #333;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-black-transparent {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.hand-black {
+  fill: #000;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Colors for Clock Face */
+
+.hour0 {
+  fill: #343493;
+}
+
+.hour1 {
+  fill: #5c329e;
+}
+
+.hour2 {
+  fill: #7b2a8c;
+}
+
+.hour3 {
+  fill: #933191;
+}
+
+.hour4 {
+  fill: #ad3691;
+}
+
+.hour5 {
+  fill: #bc4271;
+}
+
+.hour6 {
+  fill: #e88585;
+}
+
+.hour7 {
+  fill: #ba5d56;
+}
+
+.hour8 {
+  fill: #e87d52;
+}
+
+.hour9 {
+  fill: #ea9250;
+}
+
+.hour10 {
+  fill: #e8a752;
+}
+
+.hour11 {
+  fill: #ddc78a;
+}
+
+.hour12 {
+  fill: #ddcb7f;
+}
+
+.hour13 {
+  fill: #e5ce6a;
+}
+
+.hour14 {
+  fill: #ddd67a;
+}
+
+.hour15 {
+  fill: #c1c660;
+}
+
+.hour16 {
+  fill: #9fb541;
+}
+
+.hour17 {
+  fill: #779e54;
+}
+
+.hour18 {
+  fill: #377226;
+}
+
+.hour19 {
+  fill: #7daf84;
+}
+
+.hour20 {
+  fill: #5b9984;
+}
+
+.hour21 {
+  fill: #126466;
+}
+
+.hour22 {
+  fill: #2f609b;
+}
+
+.hour23 {
+  fill: #4451aa;
+}
