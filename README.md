@@ -14,5 +14,7 @@ I'm a weirdo who's obsessed with clocks. (In high school I was such a nerd that 
 
 So I'm very excited about my Javascript clock in the background of the site. If you check out my portfolio site at different times of day (or if you're a savvy enough coder to just cheat and read the code in **js/main.js** and **css/colormagic.css**), you'll notice a small surprise. :)
 
+The clock itself is a very complex SVG object that I drew in Adobe Illustrator CC. Choosing an SVG over a simple JPG/PNG made it easier to manipulate the moving hands and the afore mentioned surprise. It's also scalable no matter what the dimensions of the browser window are. You can check out the code in **_includes/clock.html**.
+
 ### Lightbox
 I used [Lightbox](http://lokeshdhakar.com/projects/lightbox2/) to display the work in my portfolio. Lightbox is incredibly easy to add to your site, and I highly recommend it.
