@@ -25,6 +25,8 @@ body {
 hr {
   border: none;
   border-bottom: dashed 5px #b3b3b3;
+  -webkit-margin-before: 2em;
+  margin-top: 2em;
 }
 
 /* Fonts */
