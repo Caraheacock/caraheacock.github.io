@@ -181,7 +181,7 @@ a:hover {
 #social_links a {
   display: inline-block;
   padding: 10px;
-  background-color: #b3b3b3;
+  background-color: #888;
   margin: 0 10px;
   letter-spacing: 5px;
 }
@@ -213,6 +213,27 @@ a:hover {
 .port-description a {
   text-decoration: underline;
   word-wrap: break-word;
+}
+
+/* Resume */
+
+#resume_download_section {
+  display: block;
+  float: right;
+  background-color: rgba(136,136,136,0.2);
+  padding: 25px;
+  margin: 25px 0 25px 25px;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+#resume_download_section img {
+  border: solid 1px #888;
+  border-radius: 10px;
+}
+
+#resume_download_section p {
+  margin-bottom: 0;
 }
 
 /* Mobile specific */
@@ -251,5 +272,13 @@ a:hover {
   .port-image-section img {
     max-width: 100%;
     height: auto;
+  }
+  
+  #resume_download_section {
+    margin: 0 0 25px 0;
+    padding: 25px 0;
+    background-color: transparent;
+    float: none;
+    width: 100%;
   }
 }
