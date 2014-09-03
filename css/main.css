@@ -113,10 +113,8 @@ a:hover {
   max-width: 90%;
 }
 
-#clock {
-}
-
-#clock_face, #second_hand, #minute_hand, #hour_hand {
+.clock {
+  position: absolute;
 }
 
 /* Content Sections */
