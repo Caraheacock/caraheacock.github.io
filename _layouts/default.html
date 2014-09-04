@@ -19,12 +19,14 @@
     
   </head>
   <body>
-    <div id="clock_container">
-      {% include clock.html %}
-    </div>
+    <div id="main_page_container" class="prevent-transition">
+      <div id="clock_container">
+        {% include clock.html %}
+      </div>
     
-    <div id="content_container">
-      {{ content }}
+      <div id="content_container">
+        {{ content }}
+      </div>
     </div>
   </body>
 </html>
