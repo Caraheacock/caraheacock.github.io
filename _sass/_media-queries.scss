@@ -8,6 +8,15 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .about-image {
+    float: left;
+    max-width: 50%;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+}
+
 @media all and (max-width: 499px) {
   #main_page_container #nav {
     background-color: transparent !important;
@@ -43,6 +52,10 @@
 }
 
 @media all and (min-width: 600px) {
+  #social_links h4 {
+    max-width: 100%;
+  }
+  
   #resume_download_section {
     float: right;
     margin: 25px 0 25px 25px;
