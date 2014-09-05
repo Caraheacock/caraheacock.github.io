@@ -6,7 +6,7 @@ $("document").ready(function(){
       $window = $(window),
       $body = $('body'),
       $container = $('#main_page_container, #child_page_container'),
-      $mainPageNav = $('#main_page_nav'),
+      $mainPageNav = $('#main_page_container #nav'),
       $mainPageClock = $('#main_page_container #clock_container'),
       $clockFace = $('#clock_face');
     
@@ -30,23 +30,7 @@ $("document").ready(function(){
   
   // Loads color schemes depending on the hour of the day
   function loadColors() {
-    // Change the theme
-    if (hours > 8 && hours < 17) {
-      $body.attr("class", "theme-white");
-    } else if (hours === 8 || hours === 17) {
-      $body.attr("class", "theme-lt-gray");
-    } else if (hours === 7 || hours === 18) {
-      $body.attr("class", "theme-md-lt-gray");
-    } else if (hours === 6 || hours === 19) {
-      $body.attr("class", "theme-md-dk-gray");
-    } else if (hours === 5 || hours === 20) {
-      $body.attr("class", "theme-dk-gray");
-    } else if (hours <= 5 || hours >= 21) {
-      $body.attr("class", "theme-black");
-    }
-    
-    // Change the clock face color
-    $clockFace.attr("class", "hour" + hours);
+    $body.attr("class", "hour" + hours);
   }
   
   // Clock ticking mechanism

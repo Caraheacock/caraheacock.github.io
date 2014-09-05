@@ -1,0 +1,33 @@
+/*--------*/
+/* Resume */
+/*--------*/
+
+#resume_download_section {
+  display: block;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 0.75em;
+  
+  a {
+    display: block;
+  }
+  
+  > a {
+    border-radius: 11px;
+    padding: 0;
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  p {
+    margin-bottom: 0;
+    
+    a {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
