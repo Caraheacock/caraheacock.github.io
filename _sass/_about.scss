@@ -24,9 +24,25 @@
 
 #social_links a {
   display: inline-block;
+  width: 70px;
+  height: 70px;
   margin: 0 10px;
-  padding: 10px;
-  background-color: #888;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 35px;
   color: #fff;
   letter-spacing: 5px;
+  text-indent: -100000px;
+  
+  &.social-twitter {
+    background-image: url(/images/social_twitter.png);
+  }
+  
+  &.social-github {
+    background-image: url(/images/social_github.png);
+  }
+  
+  &.social-linkedin {
+    background-image: url(/images/social_linkedin.png);
+  }
 }
