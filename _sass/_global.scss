@@ -36,6 +36,14 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+    
+    li {
+      margin-left: 0;
+      
+      &:before {
+        content: none;
+      }
+    }
   
     a {
       display: block;

@@ -4,18 +4,17 @@
 
 #resume_download_section {
   display: block;
+  position: relative;
+  z-index: 1;
   padding: 25px 0;
   margin-bottom: 25px;
   text-align: center;
   font-size: 0.75em;
   
-  a {
-    display: block;
-  }
-  
   > a {
-    border-radius: 11px;
+    display: inline-block;
     padding: 0;
+    border-radius: 11px;
   }
   
   img {
@@ -26,6 +25,7 @@
     margin-bottom: 0;
     
     a {
+      display: block;
       width: 100%;
       padding: 10px;
     }

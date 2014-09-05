@@ -35,12 +35,30 @@
     fill: $accent-color;
   }
   
+  h4 {
+    @include clearfix;
+    display: inline-block;
+    border-bottom: solid 2px $accent-color;
+  }
+  
   a, #nav a:hover {
-    background-color: rgba($accent-color, 0.3);
+    background-color: rgba($accent-color, 0.35);
   }
   
   a:hover {
     background-color: rgba($accent-color, 0.8);
+  }
+  
+  a.lb-cancel, a.lb-close {
+    background-color: transparent;
+  }
+  
+  hr {
+    border-bottom: dashed 5px $accent-color;
+  }
+  
+  ul li:before {
+    background-color: $accent-color;
   }
   
   .port-item-container img, #port-image-gallery img, #resume_download_section img {

@@ -3,6 +3,8 @@
 /*-----------*/
 
 .port-item-container img, #port-image-gallery img {
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 

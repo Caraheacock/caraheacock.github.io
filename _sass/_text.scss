@@ -56,15 +56,16 @@ h3 {
 }
 
 h4 {
-  font-family: Comfortaa Bold, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 1.25em;
-  letter-spacing: 3px;
+  font-weight: bold;
+  letter-spacing: 0;
   margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 hr {
   border: none;
-  border-bottom: dashed 5px #b3b3b3;
   -webkit-margin-before: 2em;
   margin-top: 2em;
 }
@@ -83,4 +84,24 @@ a, a img {
 
 a img:hover {
   opacity: 0.5;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  
+  li {
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  li:before {
+    display: inline-block;
+    position: absolute;
+    top: calc(0.5em + 2px);
+    left: -1em;
+    width: 10px;
+    height: 5px;
+    content: " ";
+  }
 }
