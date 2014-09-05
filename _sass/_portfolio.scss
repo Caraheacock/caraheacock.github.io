@@ -1,0 +1,42 @@
+/*-----------*/
+/* Portfolio */
+/*-----------*/
+
+.port-item-container img, #port-image-gallery img {
+  border-radius: 10px;
+}
+
+.port-item-container > a, #port-image-gallery a {
+  display: block;
+  border-radius: 11px;
+}
+
+.port-item-container > a {
+  width: 304px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/* Web Design */
+.port-item-container {
+  @include clearfix;
+  margin-bottom: 25px;
+  
+  .port-description {
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
+/* Print Design and Illustration */
+#port-image-gallery {
+  text-align: center;
+  
+  a {
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+  }
+}

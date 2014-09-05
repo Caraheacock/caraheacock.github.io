@@ -1,0 +1,19 @@
+---
+---
+
+// start content
+
+// general
+@import 'mixins';
+@import 'resets';
+@import 'global';
+@import 'text';
+@import 'colormagic';
+
+// pages
+@import 'about';
+@import 'portfolio';
+@import 'resume';
+
+// media queries
+@import 'media-queries';

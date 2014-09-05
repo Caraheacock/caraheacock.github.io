@@ -1,0 +1,86 @@
+/*----------------*/
+/* Text and Links */
+/*----------------*/
+
+@font-face {
+	font-family: Comfortaa Bold;
+	src: url(/fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+	font-family: Comfortaa;
+	src: url(/fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+	font-family: Comfortaa Light;
+	src: url(/fonts/Comfortaa-Light.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, p, th, td, li, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h1 a, h2, h3, h4, h5, h6 {
+  font-family: Comfortaa Light, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+}
+
+p, th, td, li, span {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+p, th, td, li {
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 2.25em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  -webkit-margin-before: 2em;
+  margin-top: 2em;
+  font-family: Comfortaa Bold, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h4 {
+  font-family: Comfortaa Bold, sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  margin-top: 0.5em;
+}
+
+hr {
+  border: none;
+  border-bottom: dashed 5px #b3b3b3;
+  -webkit-margin-before: 2em;
+  margin-top: 2em;
+}
+
+a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+a, a img {
+  text-decoration: none;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+a img:hover {
+  opacity: 0.5;
+}
