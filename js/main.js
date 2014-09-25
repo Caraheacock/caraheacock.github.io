@@ -38,7 +38,7 @@ $("document").ready(function(){
     now = new Date();
     seconds = now.getSeconds();
     minutes = now.getMinutes();
-    hours = now.getHours();
+    hours = 14;
     
     // Move the hands
     $("#second_hand").attr("transform", "rotate(" + seconds*6 + " 500 500)");

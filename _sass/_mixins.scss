@@ -64,6 +64,17 @@
   .port-item-container img, #port-image-gallery img, #resume_download_section img {
     border: solid 1px $accent-color;
   }
+  
+  #back-to-top {
+    padding-top: 20px;
+    text-align: center;
+    
+    a {
+      display: inline-block;
+      width: 200px;
+      padding: 10px;
+    }
+  }
 }
 
 //-----------------//
