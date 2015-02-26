@@ -12,7 +12,7 @@ My portfolio site is built using the Jekyll framework. Omaha Code School primari
 ### Javascript Clock
 I'm a weirdo who's obsessed with clocks. (In high school I was such a nerd that I used to wear up to 4 clocks on one arm, each for a different time zone in the continental US.) I've always wanted to know enough Javascript to code a clockface. Before Omaha Code School, my Javascript skills were limited to googling how someone else did something and copying and pasting the code into my site.
 
-So I'm very excited about my Javascript clock in the background of the site. If you check out my portfolio site at different times of day (or if you're a savvy enough coder to just cheat and read the code in **js/main.js**, **_scss/_colormagic.scss**, and **_scss/_colormagic.scss**), you'll notice a small surprise. :)
+So I'm very excited about my Javascript clock in the background of the site. If you check out my portfolio site at different times of day (or if you're a savvy enough coder to just cheat and read the code in **js/main.js**, **_sass/_colormagic.scss**, and **_sass/_mixins.scss**), you'll notice a small surprise. :)
 
 The clock itself is an SVG that I drew in Adobe Illustrator CC. Choosing an SVG over a simple JPG/PNG made it easier to manipulate the moving hands and the afore mentioned surprise. It's also scalable no matter what the dimensions of the browser window are. You can check out the code in **_includes/clock.html**.
 
