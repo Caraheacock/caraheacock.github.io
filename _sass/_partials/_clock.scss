@@ -1,0 +1,18 @@
+/*-------*/
+/* Clock */
+/*-------*/
+
+#clock-container {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+.clock {
+    position: absolute;
+}

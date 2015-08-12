@@ -1,0 +1,16 @@
+/*-------------*/
+/* Child Pages */
+/*-------------*/
+
+.child-page {
+    #clock-container {
+        position: absolute;
+        width: 175px;
+        padding-bottom: 175px;
+    }
+    
+    main {
+        max-width: 950px;
+        margin: 0 auto 100px auto;
+    }
+}

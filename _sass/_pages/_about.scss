@@ -3,59 +3,45 @@
 /*-------*/
 
 .about-image {
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 #social_links {
-  @include clearfix;
-  text-align: center;
-  
-  h4 {
-    max-width: 250px;
-  }
-  
-  ul {
-    margin: 10px 0 0 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  li {
-    display: inline-block;
-    margin-left: 0;
-    margin-bottom: 15px;
-  
-    &:before {
-      content: none;
+    text-align: center;
+    
+    h4 {
+        max-width: 250px;
     }
-  }
-  
-  a {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin: 0 10px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 35px;
-    color: #fff;
-    letter-spacing: 5px;
-    text-indent: -100000px;
-  
-    &.social-twitter {
-      background-image: url(/images/social_twitter.png);
+    
+    ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+        list-style: none;
     }
-  
-    &.social-github {
-      background-image: url(/images/social_github.png);
+    
+    li {
+        display: inline-block;
+        margin-left: 0;
+        font-size: 36px;
+        line-height: 70px;
+    
+        &:before {
+            content: none;
+        }
     }
-  
-    &.social-linkedin {
-      background-image: url(/images/social_linkedin.png);
+    
+    a {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        margin: 0 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 35px;
+        color: #fff;
     }
-  }
 }

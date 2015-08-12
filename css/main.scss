@@ -3,20 +3,24 @@
 
 // start content
 
-// libraries
 @import '_lib/_fontawesome';
+@import '_lib/_lightbox';
 
-// general
+@import '_global/_variables';
 @import '_global/_mixins';
 @import '_global/_resets';
 @import '_global/_global';
 @import '_global/_text';
 @import '_global/_colormagic';
 
-// pages
+@import '_partials/_clock';
+@import '_partials/_nav';
+
+@import '_pages/_home';
+@import '_pages/_child';
+
 @import '_pages/_about';
 @import '_pages/_portfolio';
 @import '_pages/_resume';
 
-// media queries
 @import '_global/_media-queries';

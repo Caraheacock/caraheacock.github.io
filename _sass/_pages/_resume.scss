@@ -3,31 +3,31 @@
 /*--------*/
 
 #resume_download_section {
-  display: block;
-  position: relative;
-  z-index: 1;
-  padding: 25px 0;
-  margin-bottom: 25px;
-  text-align: center;
-  font-size: 0.75em;
-  
-  > a {
-    display: inline-block;
-    padding: 0;
-    border-radius: 11px;
-  }
-  
-  img {
-    border-radius: 10px;
-  }
-  
-  p {
-    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 265px;
+    margin: 0 auto 25px auto;
+    padding: 25px 0;
+    text-align: center;
     
-    a {
-      display: block;
-      width: 100%;
-      padding: 10px;
+    > a {
+        display: inline-block;
+        padding: 0;
+        border-radius: 11px;
     }
-  }
+    
+    img {
+        border-radius: 10px;
+    }
+    
+    p {
+        margin-bottom: 0;
+        
+        a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+    }
 }

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- Javascript -->
+        <script src="/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/js/lightbox.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body class="{% body_class %} prevent-transition">
+        <div id="clock-container">
+            {% include clock.html %}
+        </div>
+        
+        {% include nav.html %}
     
-    <!-- Javascript -->
-    <script src="/js/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
-    
-  </head>
-  <body>
-    <div id="main_page_container" class="prevent-transition">
-      <div id="clock_container">
-        {% include clock.html %}
-      </div>
-    
-      <div id="content_container">
-        {{ content }}
-      </div>
-    </div>
-  </body>
+        <main>
+            {{ content }}
+        </main>
+    </body>
 </html>

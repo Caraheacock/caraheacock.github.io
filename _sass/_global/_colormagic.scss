@@ -3,125 +3,125 @@
 /*-----------------------*/
 
 @for $i from 9 through 16 {
-  .hour#{$i} { @extend %theme-white; }
+    .hour#{$i} { @extend %theme-white; }
 }
 
 @for $i from 0 through 4 {
-  .hour#{$i} { @extend %theme-black; }
+    .hour#{$i} { @extend %theme-black; }
 }
 
 @for $i from 21 through 23 {
-  .hour#{$i} { @extend %theme-black; }
+    .hour#{$i} { @extend %theme-black; }
 }
 
 .hour8, .hour17 {
-  @extend %theme-lt-gray;
+    @extend %theme-lt-gray;
 }
 
 .hour7, .hour18 {
-  @extend %theme-md-lt-gray;
+    @extend %theme-md-lt-gray;
 }
 
 .hour6, .hour19 {
-  @extend %theme-md-dk-gray;
+    @extend %theme-md-dk-gray;
 }
 
 .hour5, .hour20 {
-  @extend %theme-dk-gray;
+    @extend %theme-dk-gray;
 }
 
 .hour0 {
-  @include accent_color(#343493);
+    @include accent_color(#343493);
 }
 
 .hour1 {
-  @include accent_color(#5c329e);
+    @include accent_color(#5c329e);
 }
 
 .hour2 {
-  @include accent_color(#7b2a8c);
+    @include accent_color(#7b2a8c);
 }
 
 .hour3 {
-  @include accent_color(#933191);
+    @include accent_color(#933191);
 }
 
 .hour4 {
-  @include accent_color(#ad3691);
+    @include accent_color(#ad3691);
 }
 
 .hour5 {
-  @include accent_color(#bc4271);
+    @include accent_color(#bc4271);
 }
 
 .hour6 {
-  @include accent_color(#e88585);
+    @include accent_color(#e88585);
 }
 
 .hour7 {
-  @include accent_color(#ba5d56);
+    @include accent_color(#ba5d56);
 }
 
 .hour8 {
-  @include accent_color(#e87d52);
+    @include accent_color(#e87d52);
 }
 
 .hour9 {
-  @include accent_color(#ea9250);
+    @include accent_color(#ea9250);
 }
 
 .hour10 {
-  @include accent_color(#e8a752);
+    @include accent_color(#e8a752);
 }
 
 .hour11 {
-  @include accent_color(#ddc78a);
+    @include accent_color(#ddc78a);
 }
 
 .hour12 {
-  @include accent_color(#ddcb7f);
+    @include accent_color(#ddcb7f);
 }
 
 .hour13 {
-  @include accent_color(#e5ce6a);
+    @include accent_color(#e5ce6a);
 }
 
 .hour14 {
-  @include accent_color(#ddd67a);
+    @include accent_color(#ddd67a);
 }
 
 .hour15 {
-  @include accent_color(#c1c660);
+    @include accent_color(#c1c660);
 }
 
 .hour16 {
-  @include accent_color(#9fb541);
+    @include accent_color(#9fb541);
 }
 
 .hour17 {
-  @include accent_color(#779e54);
+    @include accent_color(#779e54);
 }
 
 .hour18 {
-  @include accent_color(#377226);
+    @include accent_color(#377226);
 }
 
 .hour19 {
-  @include accent_color(#7daf84);
+    @include accent_color(#7daf84);
 }
 
 .hour20 {
-  @include accent_color(#5b9984);
+    @include accent_color(#5b9984);
 }
 
 .hour21 {
-  @include accent_color(#126466);
+    @include accent_color(#126466);
 }
 
 .hour22 {
-  @include accent_color(#2f609b);
+    @include accent_color(#2f609b);
 }
 
 .hour23 {
-  @include accent_color(#4451aa);
+    @include accent_color(#4451aa);
 }

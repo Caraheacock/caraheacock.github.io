@@ -3,105 +3,126 @@
 /*----------------*/
 
 @font-face {
-	font-family: Comfortaa Bold;
-	src: url(/fonts/Comfortaa-Bold.ttf);
+    font-family: Comfortaa Bold;
+    src: url(/fonts/Comfortaa-Bold.ttf);
 }
 
 @font-face {
-	font-family: Comfortaa;
-	src: url(/fonts/Comfortaa-Regular.ttf);
+    font-family: Comfortaa;
+    src: url(/fonts/Comfortaa-Regular.ttf);
 }
 
 @font-face {
-	font-family: Comfortaa Light;
-	src: url(/fonts/Comfortaa-Light.ttf);
+    font-family: Comfortaa Light;
+    src: url(/fonts/Comfortaa-Light.ttf);
 }
 
-h1, h2, h3, h4, h5, h6, p, th, td, li, span {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body, h1, h2, h3, h4, h5, h6, p, th, td, li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h1 a, h2, h3, h4, h5, h6 {
-  font-family: Comfortaa Light, sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.25em;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
-p, th, td, li, span {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-p, th, td, li {
-  line-height: 1.5em;
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 30px;
+    margin-top: 3rem;
+    font-family: Comfortaa Light, sans-serif;
+    font-weight: $normal;
+    line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.25em;
-  margin: 0;
+    font-size: 2.25rem;
+    letter-spacing: 10px;
+    letter-spacing: 1rem;
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+h2, h3 {
+    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
 }
 
 h2 {
-  font-size: 2em;
-  text-align: center;
+    font-size: 36px;
+    font-size: 3.6rem;
+    text-align: center;
 }
 
 h3 {
-  -webkit-margin-before: 2em;
-  margin-top: 2em;
-  font-family: Comfortaa Bold, sans-serif;
-  font-size: 1.5em;
-  text-align: center;
+    font-family: Comfortaa Bold, sans-serif;
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-align: center;
 }
 
 h4 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 1.25em;
-  font-weight: bold;
-  letter-spacing: 0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 20rem;
+    font-size: 2rem;
+    font-weight: $bold;
 }
 
-hr {
-  border: none;
-  -webkit-margin-before: 2em;
-  margin-top: 2em;
-}
 
-a {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-a, a img {
-  text-decoration: none;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-
-a img:hover {
-  opacity: 0.5;
+p, th, td, li, span {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.65;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
-  
-  li {
-    margin-left: 30px;
-    position: relative;
-  }
-  
-  li:before {
-    display: inline-block;
-    position: absolute;
-    top: calc(0.5em + 2px);
-    left: -1em;
-    width: 10px;
-    height: 5px;
-    content: " ";
-  }
+    list-style: none;
+}
+
+main ul {
+    li {
+        position: relative;
+        margin: 5px 0 5px 30px;
+        margin: 0.5rem 0 0.5rem 3rem;
+    }
+    
+    li:before {
+        position: absolute;
+        top: calc(0.5em + 3px);
+        left: -1em;
+        display: inline-block;
+        width: 10px;
+        height: 5px;
+        content: ' ';
+    }
+}
+
+hr {
+    margin: 30px 0;
+    margin: 3rem 0;
+    border: none;
+    border-bottom: dashed 5px #000;
+}
+
+a {
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    
+    &, img {
+        @include transition(all 0.4s ease);
+    }
+    
+    img:hover {
+        opacity: 0.5;
+    }
+}
+
+.lb-nav a.lb-prev, .lb-nav a.lb-next, .lb-loader .lb-cancel, .lb-data .lb-close {
+    &, &:hover {
+        background-color: transparent;
+    }
 }

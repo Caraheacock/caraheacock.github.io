@@ -2,82 +2,69 @@
 /* Media Queries */
 /*---------------*/
 
-@media screen and (min-width: 400px) {
-  #main-page-container #nav {
-    padding: 70px 0;
-  }
-}
-
 @media screen and (min-width: 480px) {
-  .about-image {
-    float: left;
-    max-width: 50%;
-    margin-right: 30px;
-    margin-bottom: 15px;
-  }
+    .about-image {
+        float: left;
+        max-width: 50%;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
 }
 
 @media all and (max-width: 499px) {
-  #main_page_container #nav {
-    background-color: transparent !important;
-  }
+    .home #nav {
+        background-color: transparent !important;
+    }
 }
 
 @media screen and (min-width: 500px) {
-  h1 {
-    font-size: 3em;
-  }
-  
-  #content_container {
-    max-width: 100%;
-  }
-  
-  #main_page_container {
-    #clock_container {
-      opacity: 1;
+    h1 {
+        font-size: 50px;
+        font-size: 5rem;
     }
-  }
-  
-  #child_page_container {
-    width: 80%;
-  }
-  
-  #nav {
-    padding: 40px 0;
     
-    li, a {
-      display: inline-block;
+    .home {
+        #clock-container {
+            opacity: 1;
+        }
     }
-  }
+    
+    #nav {
+        padding: 40px 0;
+        
+        li {
+            display: inline-block;
+        }
+    }
 }
 
 @media all and (min-width: 600px) {
-  #social_links h4 {
-    max-width: 100%;
-  }
-  
-  #resume_download_section {
-    float: right;
-    margin: 25px 0 25px 25px;
-    padding: 25px;
-    background-color: rgba(136,136,136,0.2);
-  }
+    #social_links h4 {
+        max-width: 100%;
+    }
+    
+    #resume_download_section {
+        float: right;
+        margin: 25px 0 25px 25px;
+        padding: 25px;
+        background-color: rgba(136,136,136,0.2);
+    }
 }
 
 @media all and (min-width: 850px) {
-  h3 {
-    text-align: left;
-  }
-  
-  .port-item-container {
-    > a {
-      float: left;
-      margin: 0 25px 0 0;
+    h3 {
+        text-align: left;
     }
     
-    .port-description {
-      text-align: left;
-      overflow: hidden;
+    .port-item-container {
+        > a {
+            float: left;
+            margin: 0 25px 0 0;
+        }
+        
+        .port-description {
+            text-align: left;
+            overflow: hidden;
+        }
     }
-  }
 }
