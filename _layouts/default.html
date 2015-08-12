@@ -17,11 +17,8 @@
         <script src="/js/lightbox.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
     </head>
-    <body class="{% body_class %} prevent-transition">
-        <div id="clock-container">
-            {% include clock.html %}
-        </div>
-        
+    <body class="{% if page.url == '/' %}home{% else %}child-page{% endif %} prevent-transition">
+        {% include clock.html %}
         {% include nav.html %}
     
         <main>
