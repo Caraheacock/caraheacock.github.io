@@ -3,17 +3,20 @@
 
 // start content
 
+// libraries
+@import '_lib/_fontawesome';
+
 // general
-@import 'mixins';
-@import 'resets';
-@import 'global';
-@import 'text';
-@import 'colormagic';
+@import '_global/_mixins';
+@import '_global/_resets';
+@import '_global/_global';
+@import '_global/_text';
+@import '_global/_colormagic';
 
 // pages
-@import 'about';
-@import 'portfolio';
-@import 'resume';
+@import '_pages/_about';
+@import '_pages/_portfolio';
+@import '_pages/_resume';
 
 // media queries
-@import 'media-queries';
+@import '_global/_media-queries';
