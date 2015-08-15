@@ -1,59 +1,68 @@
 $('document').ready(function(){
     var now = new Date(),
-            seconds = now.getSeconds(),
-            minutes = now.getMinutes(),
-            hours = now.getHours(),
-            $window = $(window),
-            $body = $('body'),
-            $homePageNav = $('.home #nav'),
-            $homePageClock = $('.home #clock-container'),
-            $clockFace = $('#clock_face');
+        seconds = now.getSeconds(),
+        minutes = now.getMinutes(),
+        hours = now.getHours(),
+        $window = $(window),
+        $body = $('body'),
+        $homePageNav = $('.home #nav'),
+        $homePageClock = $('.home #clock-container'),
+        $clockFace = $('#clock_face'),
+        $secondHand = $('#second_hand'),
+        $minuteHand = $('#minute_hand'),
+        $hourHand = $('#hour_hand');
         
     // Positions main nav and resizes clock according to page
-    function positionAndResize() {
-        var windowHeight = $window.height();
-        var windowWidth = $window.width();
-        var mainPageNavHeight = $homePageNav.height() + 40;
-        var minimum = 600;
+    var positionAndResize = function() {
+        var windowHeight = $window.height(),
+            windowWidth = $window.width(),
+            mainPageNavHeight = $homePageNav.height() + 40,
+            minimum = 600;
         
         if (windowHeight <= minimum) {
             $homePageNav.css('top', minimum/2 - mainPageNavHeight);
-            $homePageClock.css('padding-bottom', minimum*0.9);
-            $homePageClock.css('width', minimum*0.9);
+            $homePageClock.css({
+                'padding-bottom':   minimum*0.9,
+                'width':            minimum*0.9
+            });
         } else {
             $homePageNav.css('top', windowHeight/2 - mainPageNavHeight);
-            $homePageClock.css('padding-bottom', windowHeight*0.9);
-            $homePageClock.css('width', windowHeight*0.9);
+            $homePageClock.css({
+                'padding-bottom':   windowHeight*0.9,
+                'width':            windowHeight*0.9
+            });
         }
     }
     
     // Loads color schemes depending on the hour of the day
-    function loadColors() {
+    var loadColors = function() {
         $body.addClass('hour' + hours);
-
-        if ($body.hasClass('hour' + (hours-1))) {
-            $body.removeClass('hour' + (hours-1));
+        
+        for (i = 0; i < 24; i++) {
+            if (i != hours && $body.hasClass('hour' + i)) {
+                $body.removeClass('hour' + i);
+            }
         }
     }
     
     // Clock ticking mechanism
-    function tick() {
+    var tick = function() {
         now = new Date();
         seconds = now.getSeconds();
         minutes = now.getMinutes();
         hours = now.getHours();
         
         // Move the hands
-        $('#second_hand').attr('transform', 'rotate(' + seconds*6 + ' 500 500)');
-        $('#minute_hand').attr('transform', 'rotate(' + minutes*6 + ' 500 500)');
-        $('#hour_hand').attr('transform', 'rotate(' + (hours*30 + minutes/2) + ' 500 500)');
+        $secondHand.attr('transform', 'rotate(' + seconds*6 + ' 500 500)');
+        $minuteHand.attr('transform', 'rotate(' + minutes*6 + ' 500 500)');
+        $hourHand.attr('transform', 'rotate(' + (hours*30 + minutes/2) + ' 500 500)');
         
         // Change color scheme
         loadColors();
     }
     
     // Main Flow
-    $(positionAndResize()); // Sets position when page is first loaded
+    positionAndResize(); // Sets position when page is first loaded
     $window.resize(positionAndResize); // Resets position whenever window size is changed
     tick();
     loadColors();
