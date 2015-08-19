@@ -36,7 +36,9 @@ $('document').ready(function(){
     
     // Loads color schemes depending on the hour of the day
     var loadColors = function() {
-        $body.addClass('hour' + hours);
+        if (!$body.hasClass('hour' + hours)) {
+            $body.addClass('hour' + hours);
+        }
         
         for (i = 0; i < 24; i++) {
             if (i != hours && $body.hasClass('hour' + i)) {

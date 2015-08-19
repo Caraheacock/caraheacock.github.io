@@ -39,6 +39,12 @@
 }
 
 @media all and (min-width: 600px) {
+    #port-image-gallery {
+        img {
+            width: 200px;
+        }
+    }
+    
     #resume_download_section {
         float: right;
         margin: 25px 0 25px 25px;
