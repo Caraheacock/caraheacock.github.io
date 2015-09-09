@@ -4,7 +4,7 @@
 
 // General
 
-@mixin clearfix {
+%clearfix {
     &:before, &:after {
         content: ' ';
         display: table;
@@ -13,6 +13,10 @@
     &:after {
         clear: both;
     }
+}
+
+%default-border-radius {
+    border-radius: 5px;
 }
 
 @mixin transition($property) {
@@ -45,8 +49,6 @@
     }
     
     h4 {
-        @include clearfix;
-        display: inline-block;
         border-bottom: solid 2px $accent-color;
     }
     
@@ -66,8 +68,8 @@
         background-color: $accent-color;
     }
     
-    .port-item-container img, #port-image-gallery img, #resume_download_section img {
-        border: solid 1px $accent-color;
+    .port-item-container .port-info ul li:before {
+        color: $accent-color;
     }
 }
 

@@ -2,44 +2,80 @@
 /* Portfolio */
 /*-----------*/
 
-.port-item-container img, #port-image-gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.port-item-container > a, #port-image-gallery a {
-    display: block;
-    border-radius: 11px;
-}
-
-.port-item-container > a {
-    width: 302px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-
-/* Web Design */
+/* Web Development */
 .port-item-container {
-    @include clearfix;
-    margin-bottom: 25px;
+    max-width: 700px;
+    margin: 30px auto 70px auto;
     
-    .port-description {
+    .port-headline h3 {
+        text-align: center;
+    }
+    
+    .port-image {
+        @extend %clearfix;
+        
+        a {
+            display: block;
+            padding: 0;
+        }
+        
+        a, img {
+            @extend %default-border-radius;
+        }
+    }
+    
+    .port-image-half-width {
+        float: left;
+        width: calc(50% - 5px);
+        margin: 5px;
+        
+        &:nth-child(odd) {
+            margin-left: 0;
+        }
+        
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+    
+    .port-info {
+        margin-top: 15px;
+        margin-top: 1.5rem;
         text-align: center;
         word-wrap: break-word;
         
-        h4 {
-            margin-top: 10px;
-            margin-top: 1rem;
+        ul, p {
+            margin: 0;
         }
+        
+        ul {
+            li {
+                display: inline-block;
+                margin: 0.2rem 0 0.2rem 1.75rem;
+                
+                &:before {
+                    top: auto;
+                    left: -0.75em;
+                    background-color: transparent;
+                    content: '#';
+                }
+            }
+        }
+    }
+    
+    .port-description {
+        max-width: 550px;
+        margin: 0 auto;
     }
 }
 
-/* Print Design and Illustration */
-#port-image-gallery {
+/* Design and Illustration */
+.port-image-gallery {
     text-align: center;
+    
+    a, img {
+        @extend %default-border-radius;
+    }
     
     a {
         display: inline-block;

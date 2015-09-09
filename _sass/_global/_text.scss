@@ -71,6 +71,8 @@ h3 {
 }
 
 h4 {
+    @extend %clearfix;
+    display: inline-block;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 20rem;
     font-size: 2rem;
@@ -128,7 +130,7 @@ a {
         @include transition(all 0.4s ease);
     }
     
-    img:hover {
+    &:hover img {
         opacity: 0.5;
     }
 }
