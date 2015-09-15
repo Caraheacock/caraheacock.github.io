@@ -50,6 +50,10 @@
         margin: 25px 0 25px 25px;
         background-color: rgba(136,136,136,0.2);
     }
+    
+    .hide-on-medium-size {
+        display: none;
+    }
 }
 
 @media all and (min-width: 850px) {
@@ -59,5 +63,9 @@
     
     .about-image {
         max-width: 40%;
+    }
+    
+    .hide-on-large-size {
+        display: none;
     }
 }

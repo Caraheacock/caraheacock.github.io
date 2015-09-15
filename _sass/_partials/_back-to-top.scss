@@ -1,0 +1,29 @@
+/*--------------------*/
+/* Back to Top Button */
+/*--------------------*/
+
+.back-to-top {
+    @include transition(all 0.4s ease);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 25px;
+    margin: 30px auto 50px auto;
+    padding-bottom: 80px;
+    cursor: pointer;
+    opacity: 0.5;
+    
+    &:hover {
+        opacity: 1;
+        
+        svg {
+            top: -5px;
+        }
+    }
+    
+    svg {
+        @include transition(all 0.4s ease);
+        position: absolute;
+        top: 0;
+    }
+}

@@ -72,4 +72,13 @@ $('document').ready(function(){
         $body.removeClass('prevent-transition');
     }, 1);
     setInterval(tick, 1000);
+    
+    // Back to top button functionality
+    var $backToTop = $('.back-to-top');
+    
+    $backToTop.click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
 });
