@@ -20,9 +20,11 @@
     <body class="{% if page.url == '/' %}home{% else %}child-page{% endif %} prevent-transition">
         {% include clock.html %}
         {% include nav.html %}
-    
+        
+        {% if content != '' %}
         <main>
             {{ content }}
         </main>
+        {% endif %}
     </body>
 </html>
