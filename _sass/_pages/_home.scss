@@ -2,9 +2,29 @@
 /* Home */
 /*------*/
 
+.home {
+    padding-top: 0;
+    
+    .clock-container {
+        top: 50%;
+        left: 50%;
+        width: 90vh;
+        max-width: 90%;
+        @include transform(translate(-50%, -50%));
+    }
+    
+    #nav {
+        position: absolute;
+        top: 50vh;
+        right: 0;
+        left: 0;
+        @include transform(translate(0, -50%));
+    }
+}
+
 @include breakpoint($size-sm) {
     .home {
-        #clock-container {
+        .clock-container {
             opacity: 1;
         }
     }

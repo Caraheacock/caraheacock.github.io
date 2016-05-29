@@ -3,10 +3,13 @@
 /*-------------*/
 
 .child-page {
-    #clock-container {
-        position: absolute;
-        width: 175px;
-        padding-bottom: 175px;
+    .clock-container {
+        width: 180px;
+        left: calc(50% - 90px);
+    }
+    
+    .clock-container-inner {
+        padding-bottom: 180px;
     }
     
     main {
