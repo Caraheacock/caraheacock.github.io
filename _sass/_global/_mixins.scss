@@ -2,97 +2,14 @@
 // Mixins //
 //--------//
 
-// General
-
-%clearfix {
-    &:before, &:after {
-        content: ' ';
-        display: table;
+// usage: @include breakpoint(480px) { your styles here }
+@mixin breakpoint($point) {
+    @media all and (min-width: $point) {
+        @content;
     }
-    
-    &:after {
-        clear: both;
-    }
-}
-
-%default-border-radius {
-    border-radius: 5px;
 }
 
 @mixin transition($property) {
     -webkit-transition: $property;
     transition: $property;
-}
-
-// Colors
-
-@mixin make_theme($main-color, $main-translucent-color, $text-color) {
-    background-color: $main-color;
-    color: $text-color;
-    
-    &.home #nav {
-        background-color: $main-translucent-color;
-    }
-    
-    a {
-        color: $text-color;
-    }
-    
-    #second_hand, #minute_hand, #hour_hand {
-        fill: $main-color;
-    }
-}
-
-@mixin accent_color($accent-color) {
-    #clock_face, .back-to-top svg {
-        fill: $accent-color;
-    }
-    
-    h4 {
-        border-bottom: solid 2px $accent-color;
-    }
-    
-    a, #nav a:hover {
-        background-color: rgba($accent-color, 0.35);
-    }
-    
-    a:hover {
-        background-color: rgba($accent-color, 0.8);
-    }
-    
-    hr {
-        border-color: $accent-color;
-    }
-    
-    main ul li:before {
-        background-color: $accent-color;
-    }
-    
-    .port-item-container .port-info ul li:before {
-        color: $accent-color;
-    }
-}
-
-%theme-white {
-    @include make_theme(#fff, rgba(255,255,255,0.7), #000);
-}
-
-%theme-lt-gray {
-    @include make_theme(#ccc, rgba(205,205,205,0.7), #000);
-}
-
-%theme-md-lt-gray {
-    @include make_theme(#999, rgba(154,154,154,0.7), #000);
-}
-
-%theme-md-dk-gray {
-    @include make_theme(#666, rgba(103,103,103,0.7), #fff);
-}
-
-%theme-dk-gray {
-    @include make_theme(#333, rgba(52,52,52,0.7), #fff);
-}
-
-%theme-black {
-    @include make_theme(#000, rgba(0,0,0,0.7), #fff);
 }

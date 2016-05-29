@@ -7,10 +7,10 @@ $('document').ready(function(){
         $body = $('body'),
         $homePageNav = $('.home #nav'),
         $homePageClock = $('.home #clock-container'),
-        $clockFace = $('#clock_face'),
-        $secondHand = $('#second_hand'),
-        $minuteHand = $('#minute_hand'),
-        $hourHand = $('#hour_hand');
+        $clockFace = $('#clock-face'),
+        $secondHand = $('#second-hand'),
+        $minuteHand = $('#minute-hand'),
+        $hourHand = $('#hour-hand');
         
     // Positions main nav and resizes clock according to page
     var positionAndResize = function() {

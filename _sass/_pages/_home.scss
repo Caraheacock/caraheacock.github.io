@@ -1,0 +1,11 @@
+/*------*/
+/* Home */
+/*------*/
+
+@include breakpoint($size-sm) {
+    .home {
+        #clock-container {
+            opacity: 1;
+        }
+    }
+}

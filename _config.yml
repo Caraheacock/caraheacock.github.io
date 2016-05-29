@@ -2,3 +2,5 @@ name: Cara Heacock
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+sass:
+    style: compressed

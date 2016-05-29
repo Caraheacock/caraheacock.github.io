@@ -64,6 +64,10 @@ h1 {
     a {
         text-decoration: none;
     }
+    
+    @include breakpoint($size-md) {
+        font-size: 5rem;
+    }
 }
 
 h2, h3 {
@@ -84,6 +88,10 @@ h3 {
     font-size: 2.4rem;
     font-weight: $bold;
     text-align: center;
+    
+    @include breakpoint($size-lg) {
+        text-align: left;
+    }
 }
 
 h4 {

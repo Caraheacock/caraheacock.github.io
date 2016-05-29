@@ -1,0 +1,30 @@
+/*-----------------*/
+/* Utility Classes */
+/*-----------------*/
+
+%clearfix {
+    &:before, &:after {
+        content: ' ';
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
+
+%default-border-radius {
+    border-radius: 5px;
+}
+
+@include breakpoint($size-md) {
+    .hide-on-medium-size {
+        display: none;
+    }
+}
+
+@include breakpoint($size-lg) {
+    .hide-on-large-size {
+        display: none;
+    }
+}

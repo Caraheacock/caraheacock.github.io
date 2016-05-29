@@ -83,4 +83,10 @@
     img {
         width: 100px;
     }
+    
+    @include breakpoint($size-md) {
+        img {
+            width: 200px;
+        }
+    }
 }

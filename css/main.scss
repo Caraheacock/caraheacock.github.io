@@ -5,10 +5,12 @@
 
 @import '_lib/_fontawesome';
 @import '_lib/_lightbox';
+@import '_lib/_syntax-highlighting';
 
 @import '_global/_variables';
 @import '_global/_mixins';
 @import '_global/_resets';
+@import '_global/_utility';
 @import '_global/_global';
 @import '_global/_typography';
 @import '_global/_media';
@@ -23,5 +25,3 @@
 @import '_pages/_about';
 @import '_pages/_portfolio';
 @import '_pages/_resume';
-
-@import '_global/_media-queries';

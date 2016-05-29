@@ -29,4 +29,13 @@
     a {
         background-color: transparent;
     }
+    
+    @include breakpoint($size-sm) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        
+        li {
+            display: inline-block;
+        }
+    }
 }
