@@ -58,15 +58,11 @@ h1, h2, h5, h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     letter-spacing: 1rem;
     
     a {
         text-decoration: none;
-    }
-    
-    @include breakpoint($size-md) {
-        font-size: 5rem;
     }
 }
 
@@ -75,7 +71,7 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     text-align: center;
 }
 
@@ -85,7 +81,7 @@ h3, h4, h5, h6 {
 
 h3 {
     font-family: $comfortaa-bold;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: $bold;
     text-align: center;
     
@@ -98,18 +94,18 @@ h4 {
     @extend %clearfix;
     display: inline-block;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: $bold;
 }
 
 h5, h6 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 
-p, th, td, li, span {
+body, p, th, td, li, span {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.65;
 }
 
@@ -150,6 +146,32 @@ a {
     
     &:hover img {
         opacity: 0.5;
+    }
+}
+
+@include breakpoint($size-md) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3.6rem;
+    }
+    
+    h3 {
+        font-size: 2.4rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    h5, h6 {
+        font-size: 1.8rem;
+    }
+    
+    body, p, th, td, li, span {
+        font-size: 1.6rem;
     }
 }
 

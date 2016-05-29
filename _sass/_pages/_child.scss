@@ -16,4 +16,19 @@
         max-width: 950px;
         margin: 0 auto 10rem auto;
     }
+    
+    @include breakpoint($size-sm) {
+        #nav {
+            position: relative;
+            top: 90px;
+            padding-bottom: 6rem;
+            @include transform(translate(0, -50%));
+        }
+    }
+    
+    @include breakpoint($size-md) {
+        #nav {
+            padding-bottom: 4rem;
+        }
+    }
 }

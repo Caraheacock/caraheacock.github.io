@@ -3,7 +3,7 @@
 /*------------*/
 
 #nav {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     
     h1, ul {
@@ -15,12 +15,12 @@
     }
     
     li {
-        font-size: 2rem;
-        letter-spacing: 0.3rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
         
         a {
             display: block;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem;
             text-decoration: none;
         }
     }
@@ -35,6 +35,18 @@
         
         li {
             display: inline-block;
+        }
+    }
+    
+    @include breakpoint($size-md) {
+        li {
+            font-size: 2rem;
+            letter-spacing: 0.3rem;
+            
+            a {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
         }
     }
 }
