@@ -1,20 +1,42 @@
-/*----------------*/
-/* Text and Links */
-/*----------------*/
+/*------------*/
+/* Typography */
+/*------------*/
 
 @font-face {
-    font-family: Comfortaa Bold;
-    src: url(/fonts/Comfortaa-Bold.ttf);
+    font-family: 'comfortaalight';
+    src: url('/fonts/comfortaa-light-webfont.eot');
+    src: url('/fonts/comfortaa-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/comfortaa-light-webfont.woff2') format('woff2'),
+         url('/fonts/comfortaa-light-webfont.woff') format('woff'),
+         url('/fonts/comfortaa-light-webfont.ttf') format('truetype'),
+         url('/fonts/comfortaa-light-webfont.svg#comfortaalight') format('svg');
+    font-weight: $light;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Comfortaa;
-    src: url(/fonts/Comfortaa-Regular.ttf);
+    font-family: 'comfortaaregular';
+    src: url('/fonts/comfortaa-regular-webfont.eot');
+    src: url('/fonts/comfortaa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('/fonts/comfortaa-regular-webfont.woff') format('woff'),
+         url('/fonts/comfortaa-regular-webfont.ttf') format('truetype'),
+         url('/fonts/comfortaa-regular-webfont.svg#comfortaaregular') format('svg');
+    font-weight: $normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Comfortaa Light;
-    src: url(/fonts/Comfortaa-Light.ttf);
+    font-family: 'comfortaabold';
+    src: url('/fonts/comfortaa-bold-webfont.eot');
+    src: url('/fonts/comfortaa-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/comfortaa-bold-webfont.woff2') format('woff2'),
+         url('/fonts/comfortaa-bold-webfont.woff') format('woff'),
+         url('/fonts/comfortaa-bold-webfont.ttf') format('truetype'),
+         url('/fonts/comfortaa-bold-webfont.svg#comfortaabold') format('svg');
+    font-weight: $bold;
+    font-style: normal;
+
 }
 
 body, h1, h2, h3, h4, h5, h6, p, th, td, li {
@@ -27,12 +49,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $normal;
     line-height: 1.4;
 }
 
 h1, h2, h5, h6 {
-    font-family: Comfortaa Light, sans-serif;
+    font-family: $comfortaa-light;
+    font-weight: $light;
 }
 
 h1 {
@@ -58,8 +80,9 @@ h3, h4, h5, h6 {
 }
 
 h3 {
-    font-family: Comfortaa Bold, sans-serif;
+    font-family: $comfortaa-bold;
     font-size: 2.4rem;
+    font-weight: $bold;
     text-align: center;
 }
 
@@ -110,8 +133,7 @@ hr {
 }
 
 a {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding: 0 0.2rem;
     text-decoration: none;
     
     &, img {
@@ -123,6 +145,7 @@ a {
     }
 }
 
+/* Lightbox fixes */
 .lb-nav a.lb-prev, .lb-nav a.lb-next, .lb-loader .lb-cancel, .lb-data .lb-close {
     &, &:hover {
         background-color: transparent;
