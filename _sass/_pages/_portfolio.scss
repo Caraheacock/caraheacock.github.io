@@ -5,7 +5,7 @@
 /* Web Development */
 .port-item-container {
     max-width: 700px;
-    margin: 30px auto 70px auto;
+    margin: 3rem auto 7rem;
     
     .port-headline h3 {
         text-align: center;
@@ -26,8 +26,8 @@
     
     .port-image-half-width {
         float: left;
-        width: calc(50% - 5px);
-        margin: 5px;
+        width: calc(50% - 0.5rem);
+        margin: 0.5rem;
         
         &:nth-child(odd) {
             margin-left: 0;
@@ -39,7 +39,6 @@
     }
     
     .port-info {
-        margin-top: 15px;
         margin-top: 1.5rem;
         text-align: center;
         word-wrap: break-word;
@@ -48,17 +47,15 @@
             margin: 0;
         }
         
-        ul {
-            li {
-                display: inline-block;
-                margin: 0.2rem 0 0.2rem 1.75rem;
-                
-                &:before {
-                    top: auto;
-                    left: -0.75em;
-                    background-color: transparent;
-                    content: '#';
-                }
+        li {
+            display: inline-block;
+            margin: 0.2rem 0 0.2rem 1.75rem;
+            
+            &:before {
+                top: auto;
+                left: -0.75em;
+                background-color: transparent;
+                content: '#';
             }
         }
     }
@@ -79,7 +76,7 @@
     
     a {
         display: inline-block;
-        margin: 5px;
+        margin: 0.5rem;
         padding: 0;
     }
     

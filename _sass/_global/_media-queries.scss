@@ -6,7 +6,7 @@
     .about-image {
         float: left;
         max-width: 50%;
-        margin: 5px 30px 15px 0;
+        margin: 0.5rem 3rem 1.5rem 0;
     }
 }
 
@@ -18,7 +18,6 @@
 
 @media screen and (min-width: 500px) {
     h1 {
-        font-size: 50px;
         font-size: 5rem;
     }
     
@@ -29,8 +28,8 @@
     }
     
     #nav {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         
         li {
             display: inline-block;
@@ -47,8 +46,9 @@
     
     .resume_download_section {
         float: right;
-        margin: 25px 0 25px 25px;
-        background-color: rgba(136,136,136,0.2);
+        margin: 2.5rem;
+        margin-left: 0;
+        background-color: rgba(136, 136, 136, 0.2);
     }
     
     .hide-on-medium-size {

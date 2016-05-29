@@ -10,15 +10,15 @@
 }
 
 #social_links {
-    margin: 10px 0 0 0;
+    margin: 1rem 0 0 0;
     padding: 0;
     text-align: center;
     
     li {
         display: inline-block;
-        margin: 0 5px;
-        font-size: 25px;
-        line-height: 50px;
+        margin: 0 0.5rem;
+        font-size: 2.5rem;
+        line-height: 5rem;
     
         &:before {
             content: none;
@@ -27,11 +27,9 @@
     
     a {
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 35px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
         color: #fff;
     }
 }

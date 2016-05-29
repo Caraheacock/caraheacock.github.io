@@ -4,7 +4,7 @@
 
 #nav {
     position: relative;
-    padding: 30px 15px;
+    padding: 3rem 1.5rem;
     text-align: center;
     
     h1, ul {
@@ -16,14 +16,12 @@
     }
     
     li {
-        font-size: 20px;
         font-size: 2rem;
-        letter-spacing: 3px;
         letter-spacing: 0.3rem;
         
         a {
             display: block;
-            padding: 5px 10px;
+            padding: 0.5rem 1rem;
             text-decoration: none;
         }
     }

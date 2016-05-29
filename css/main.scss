@@ -10,20 +10,18 @@
 @import '_global/_mixins';
 @import '_global/_resets';
 @import '_global/_global';
-@import '_global/_text';
+@import '_global/_typography';
+@import '_global/_media';
 @import '_global/_colormagic';
 
 @import '_partials/_clock';
 @import '_partials/_nav';
 @import '_partials/_back-to-top';
 
-@import '_pages/_home';
 @import '_pages/_child';
-
+@import '_pages/_404';
 @import '_pages/_about';
 @import '_pages/_portfolio';
 @import '_pages/_resume';
-
-@import '_pages/_404';
 
 @import '_global/_media-queries';
