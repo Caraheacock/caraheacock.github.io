@@ -1,4 +1,4 @@
 name: Cara Heacock
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
