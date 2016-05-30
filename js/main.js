@@ -1,4 +1,4 @@
-$('document').ready(function(){
+$('document').ready(function() {
     var now = new Date(),
         seconds = now.getSeconds(),
         minutes = now.getMinutes(),
@@ -12,14 +12,22 @@ $('document').ready(function(){
     
     // Loads color schemes depending on the hour of the day
     var loadColors = function() {
+        /*
+         * If the body does not have a class indicating the current hour
+         * (e.g. hour1, hour13, etc.) remove all hour classes and add the
+         * current one. This class determines the color scheme of the website
+         * for that hour.
+         *
+         * Mostly this check simply removes the class from the previous hour
+         * and adds the new one, but sometimes the body retains classes from
+         * several hours ago (if the website was left open in another tab, for
+         * example), so that's why we remove ALL hour classes, not just the
+         * previous one.
+         */
         if (!$body.hasClass('hour' + hours)) {
-            $body.addClass('hour' + hours);
-        }
-        
-        for (i = 0; i < 24; i++) {
-            if (i !== hours && $body.hasClass('hour' + i)) {
-                $body.removeClass('hour' + i);
-            }
+            $body.removeClass(function(index, css) {
+                return (css.match (/hour[1-2]?[0-9]/g) || []).join(' ');
+            }).addClass('hour' + hours);
         }
     }
     
@@ -35,7 +43,7 @@ $('document').ready(function(){
         $minuteHand.attr('transform', 'rotate(' + minutes*6 + ' 500 500)');
         $hourHand.attr('transform', 'rotate(' + (hours*30 + minutes/2) + ' 500 500)');
         
-        // Change color scheme
+        // Change color scheme if necessary
         loadColors();
     }
     
