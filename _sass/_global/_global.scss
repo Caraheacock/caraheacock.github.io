@@ -20,5 +20,15 @@ body {
 main {
     position: relative;
     display: block;
+    max-width: 950px;
+    margin: 0 auto 10rem auto;
     padding: 0 1.5rem;
+    
+    @include breakpoint($size-sm) {
+        padding-top: 4rem;
+    }
+    
+    @include breakpoint($size-md) {
+        padding-top: 1.5rem;
+    }
 }

@@ -4,31 +4,19 @@
 
 .child-page {
     .clock-container {
-        width: 180px;
-        left: calc(50% - 90px);
+        width: 18rem;
+        left: calc(50% - 9rem);
     }
     
     .clock-container-inner {
-        padding-bottom: 180px;
-    }
-    
-    main {
-        max-width: 950px;
-        margin: 0 auto 10rem auto;
+        padding-bottom: 18rem;
     }
     
     @include breakpoint($size-sm) {
         #nav {
             position: relative;
-            top: 90px;
-            padding-bottom: 6rem;
+            top: 9rem;
             @include transform(translate(0, -50%));
-        }
-    }
-    
-    @include breakpoint($size-md) {
-        #nav {
-            padding-bottom: 4rem;
         }
     }
 }

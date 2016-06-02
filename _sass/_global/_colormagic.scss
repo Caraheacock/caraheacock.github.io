@@ -33,11 +33,11 @@
     }
     
     a, #nav a:hover {
-        background-color: rgba($accent-color, 0.35);
+        background-color: rgba($accent-color, 0.5);
     }
     
     a:hover {
-        background-color: rgba($accent-color, 0.8);
+        background-color: rgba($accent-color, 0.9);
     }
     
     hr {
@@ -71,7 +71,7 @@
 .hour5  { @include make_theme(#332c2c, #fff); }
 .hour6  { @include make_theme(#665a5a, #fff); }
 .hour7  { @include make_theme(#bfafaf, #000); }
-.hour8  { @include make_theme(#e8e5dd, #000); }
+.hour8  { @include make_theme(#efece4, #000); }
 
 // Dusk
 .hour17 { @include make_theme(#ebebf1, #000); }
@@ -80,8 +80,8 @@
 .hour20 { @include make_theme(#292931, #fff); }
 
 // Accent colors
-.hour0  { @include accent_color(#343493); }
-.hour1  { @include accent_color(#5c329e); }
+.hour0  { @include accent_color(#2c2c9e); }
+.hour1  { @include accent_color(#5a329e); }
 .hour2  { @include accent_color(#7b2a8c); }
 .hour3  { @include accent_color(#933191); }
 .hour4  { @include accent_color(#ad3691); }
@@ -90,17 +90,17 @@
 .hour7  { @include accent_color(#ba5d56); }
 .hour8  { @include accent_color(#e87d52); }
 .hour9  { @include accent_color(#ea9250); }
-.hour10 { @include accent_color(#e8a752); }
-.hour11 { @include accent_color(#ddc78a); }
-.hour12 { @include accent_color(#ddcb7f); }
-.hour13 { @include accent_color(#e5ce6a); }
-.hour14 { @include accent_color(#ddd67a); }
-.hour15 { @include accent_color(#c1c660); }
-.hour16 { @include accent_color(#9fb541); }
+.hour10 { @include accent_color(#f1ae58); }
+.hour11 { @include accent_color(#eacc64); }
+.hour12 { @include accent_color(#f7d57e); }
+.hour13 { @include accent_color(#f5df7e); }
+.hour14 { @include accent_color(#e0e07d); }
+.hour15 { @include accent_color(#ced456); }
+.hour16 { @include accent_color(#acc347); }
 .hour17 { @include accent_color(#779e54); }
 .hour18 { @include accent_color(#377226); }
 .hour19 { @include accent_color(#7daf84); }
 .hour20 { @include accent_color(#5b9984); }
 .hour21 { @include accent_color(#126466); }
-.hour22 { @include accent_color(#2f609b); }
-.hour23 { @include accent_color(#4451aa); }
+.hour22 { @include accent_color(#1d589e); }
+.hour23 { @include accent_color(#2e3c9c); }

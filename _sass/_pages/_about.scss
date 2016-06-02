@@ -17,7 +17,7 @@
     }
 }
 
-#social_links {
+.social-links {
     margin: 1rem 0 0 0;
     padding: 0;
     text-align: center;
@@ -25,8 +25,8 @@
     li {
         display: inline-block;
         margin: 0 0.5rem;
-        font-size: 2.5rem;
-        line-height: 5rem;
+        font-size: 2rem;
+        line-height: 3.8rem;
     
         &:before {
             content: none;
@@ -35,9 +35,20 @@
     
     a {
         display: inline-block;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
-        color: #fff;
+    }
+    
+    @include breakpoint($size-md) {
+        li {
+            font-size: 2.5rem;
+            line-height: 4.8rem;
+        }
+        
+        a {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 }
