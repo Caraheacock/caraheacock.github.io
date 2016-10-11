@@ -3,7 +3,6 @@
 /*--------------------*/
 
 .back-to-top {
-    @include transition(all 0.4s ease);
     position: absolute;
     left: 0;
     right: 0;
@@ -12,6 +11,7 @@
     padding-bottom: 8rem;
     cursor: pointer;
     opacity: 0.5;
+    @include transition(all 0.4s ease);
     
     &:hover {
         opacity: 1;
@@ -22,8 +22,8 @@
     }
     
     svg {
-        @include transition(all 0.4s ease);
         position: absolute;
         top: 0;
+        @include transition(all 0.4s ease);
     }
 }

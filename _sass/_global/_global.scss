@@ -12,9 +12,7 @@ body {
 }
 
 .prevent-transition * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    transition: none !important;
+    @include transition(none !important);
 }
 
 main {
