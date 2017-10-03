@@ -70,12 +70,12 @@
 // Dawn
 .hour5  { @include make_theme(#332c2c, #fff); }
 .hour6  { @include make_theme(#665a5a, #fff); }
-.hour7  { @include make_theme(#bfafaf, #000); }
-.hour8  { @include make_theme(#efece4, #000); }
+.hour7  { @include make_theme(#cfbfbf, #000); }
+.hour8  { @include make_theme(#efe7e7, #000); }
 
 // Dusk
 .hour17 { @include make_theme(#ebebf1, #000); }
-.hour18 { @include make_theme(#b7b7be, #000); }
+.hour18 { @include make_theme(#c7c7ce, #000); }
 .hour19 { @include make_theme(#56565f, #fff); }
 .hour20 { @include make_theme(#292931, #fff); }
 
