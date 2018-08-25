@@ -1,4 +1,4 @@
-# Cara Heacock's Portfolio
+# Cara Michele Ryan's Portfolio
 
 ## About
 
