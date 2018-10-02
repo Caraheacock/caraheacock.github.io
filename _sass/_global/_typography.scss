@@ -58,15 +58,14 @@ h1, h2, h5, h6 {
 }
 
 h1 {
-    font-size: 3.6rem;
-    letter-spacing: 1rem;
-    
+    font-size: 3rem;
+
     a {
         text-decoration: none;
     }
 }
 
-h2, h3 {
+h1, h2, h3 {
     letter-spacing: 0.5rem;
 }
 
@@ -84,7 +83,7 @@ h3 {
     font-size: 2rem;
     font-weight: $bold;
     text-align: center;
-    
+
     @include breakpoint($size-lg) {
         text-align: left;
     }
@@ -118,7 +117,7 @@ main ul {
         position: relative;
         margin: 0.5rem 0 0.5rem 3rem;
     }
-    
+
     li:before {
         position: absolute;
         top: calc(0.5em + 3px);
@@ -139,37 +138,44 @@ hr {
 a {
     padding: 0 0.2rem;
     text-decoration: none;
-    
+
     &, img {
         @include transition(all 0.4s ease);
     }
-    
+
     &:hover img {
         opacity: 0.5;
+    }
+}
+
+@include breakpoint($size-sm) {
+    h1 {
+        font-size: 4rem;
     }
 }
 
 @include breakpoint($size-md) {
     h1 {
         font-size: 5rem;
+        letter-spacing: 1rem;
     }
-    
+
     h2 {
         font-size: 3.6rem;
     }
-    
+
     h3 {
         font-size: 2.4rem;
     }
-    
+
     h4 {
         font-size: 2rem;
     }
-    
+
     h5, h6 {
         font-size: 1.8rem;
     }
-    
+
     body, p, th, td, li, span {
         font-size: 1.6rem;
     }

@@ -3,46 +3,52 @@
 /*------------*/
 
 #nav {
-    padding: 2rem 1.5rem;
+    padding: 6rem 1.5rem;
     text-align: center;
-    
+
     h1, ul {
         margin: 0;
     }
-    
+
     h1, li {
         line-height: 1.2;
     }
-    
+
     li {
-        font-size: 1.8rem;
-        letter-spacing: 0.2rem;
-        
+        display: inline-block;
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+
         a {
             display: block;
-            padding: 0.5rem;
+            padding: 0.3rem;
             text-decoration: none;
         }
     }
-    
+
     a {
         background-color: transparent;
     }
-    
+
     @include breakpoint($size-sm) {
         padding-top: 4rem;
         padding-bottom: 4rem;
         
         li {
-            display: inline-block;
+            font-size: 1.8rem;
+            letter-spacing: 0.2rem;
+            
+            a {
+                padding: 0.5rem;
+            }
         }
     }
-    
+
     @include breakpoint($size-md) {
         li {
             font-size: 2rem;
             letter-spacing: 0.3rem;
-            
+
             a {
                 padding-right: 1rem;
                 padding-left: 1rem;
