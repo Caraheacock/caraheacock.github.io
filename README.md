@@ -2,7 +2,7 @@
 
 ## About
 
-This is the repo for [my portfolio site](http://caraheacock.com/). When my 12 week experience in the inaugural [Omaha Code School](http://omahacodeschool.com/) class was coming to a close, I wanted to redo my portfolio site completely to showcase all my new work and skills (before OCS, all I knew was basic HTML and CSS).
+This is the repo for [my portfolio site](https://caramiki.com/). When my 12 week experience in the inaugural [Omaha Code School](http://omahacodeschool.com/) class was coming to a close, I wanted to redo my portfolio site completely to showcase all my new work and skills (before OCS, all I knew was basic HTML and CSS).
 
 ## Technical Stuff
 
